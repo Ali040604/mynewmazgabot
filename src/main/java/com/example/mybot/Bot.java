@@ -65,7 +65,7 @@ public class Bot extends TelegramLongPollingBot {
                 } else if (message.getText().equalsIgnoreCase("анрег")) {
                     repository.deleteById(id);
                     send(chatId, String.format(
-                                    "%s тағыда сообщение жазғанға дейін анрегте болады(да да, я не послал тебя(Ричи на аве == +100 к вежливости))",
+                                    "%s не хочет, чтобы я тэгал его. Поэтому он идет на*уй(до первого месседжа)",
                                     message.getFrom().getFirstName()),
                             message.getMessageId());
                 }
